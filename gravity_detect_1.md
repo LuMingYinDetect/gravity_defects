@@ -9,7 +9,7 @@ https://github.com/marcobambini/gravity.git
 
 Defect details:
 
-1.In the file gravity_parser.c located at line 436, a pointer variable named 'list' is defined, and the return value of the function cstring_array_create is assigned to this pointer, as shown below:
+1.In line 436 of the file gravity_parser.c located in the /gravity/src/compiler directory, a pointer variable named 'list' is defined, and a dynamic memory area is allocated for this pointer by calling the function cstring_array_create, as shown in the diagram below:
 
 ![image](https://github.com/LuMingYinDetect/gravity_defects/blob/main/gravity_1.png)
 
